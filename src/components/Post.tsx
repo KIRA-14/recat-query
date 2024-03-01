@@ -19,10 +19,10 @@ function Post() {
     <div className='post_container'>
       {isLoading && <Loader />}
       {isError && <p>{error?.message}</p>}
-      {postData && postData.map(({ id, title, views }: IPost) => {
+      {postData?.map(({ id, title, views }: IPost) => {
         return (
         <div key={id}>
-          <p>{title}<span >{views}</span></p>
+          <p>{title}<span >--{views}</span></p>
         </div>
         )
       })}

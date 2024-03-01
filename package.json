@@ -4,6 +4,7 @@
   "description": "react-query",
   "main": "index.js",
   "scripts": {
+    "clean": "rm -r .cache, dist",
     "start": "npx parcel index.html",
     "api": "npx json-server db/db.json",
     "test": "jest"
@@ -20,12 +21,10 @@
   "homepage": "https://github.com/KIRA-14/recat-query#readme",
   "dependencies": {
     "@tanstack/react-query": "^5.24.1",
-    "@types/json-server": "^0.14.7",
     "@types/react": "^18.2.61",
-    "@types/react-dom": "^18.2.19",
+    "@types/react-dom": "^18.2.19"
   },
   "devDependencies": {
-    "@types/node-sass": "^4.11.7",
     "parcel-bundler": "^1.12.5",
     "typescript": "^5.3.3"
   }

@@ -1,5 +1,5 @@
 export interface IPostData{
-    posts:[IPost],
+    [index: number]: IPost
 }
 
 export interface IPost{

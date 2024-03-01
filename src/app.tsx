@@ -11,7 +11,7 @@ const App =()=>(
     <StrictMode>
         <QueryClientProvider client={queryClient}>
            <Profile />
-           <ReactQueryDevtools initialIsOpen={false} />
+           <ReactQueryDevtools initialIsOpen={true} />
         </QueryClientProvider>
     </StrictMode>
 )
